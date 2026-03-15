@@ -12,7 +12,6 @@
     Arial,
     sans-serif;
   line-height: 1.8;
-  letter-spacing: 0.04em;
   padding: 8px 6px;
   background-color: #fffffe;
 }
@@ -20,6 +19,7 @@
 /* ===== Typography Base ===== */
 p {
   margin: 1.5em 0;
+  letter-spacing: 0.04em;
 }
 
 h1,
@@ -107,12 +107,16 @@ hr {
 
 /* ===== Blockquote & Quotes ===== */
 blockquote {
-  margin: 1.8em 0;
+  margin: 1.2em 0;
   padding: 0.6em 1.2em;
   background: #eef2ee;
   border-left: 4px solid #181818;
   color: #2e2e2e;
   border-radius: 4px;
+}
+
+blockquote p {
+  margin: 0;
 }
 
 blockquote,
@@ -130,6 +134,11 @@ q::after {
 blockquote strong {
   color: #181818;
   background: none;
+}
+
+blockquote a {
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 /* ===== Code ===== */
@@ -181,6 +190,10 @@ tbody {
   border: 0;
 }
 
+tbody tr:nth-child(2n) {
+  background-color: #eef2ee;
+}
+
 table tr {
   border: 0;
   border-top: 1px solid #181818;
@@ -202,10 +215,9 @@ table td {
 }
 
 table th {
-  font-weight: bold;
-  color: #ffffff;
-  border-color: #181818;
-  background-color: #181818;
+  font-weight: 600;
+  color: #181818;
+  background-color: #f5f5f5;
 }
 
 /* ===== Links & Images ===== */
@@ -217,7 +229,7 @@ a {
 img {
   max-width: 100%;
   display: block;
-  margin: 1.8em auto;
+  margin: 1.2em auto;
   border-radius: 4px;
 }
 
