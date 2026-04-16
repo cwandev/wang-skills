@@ -22,7 +22,7 @@ At least one of `source_text` or `source_url` is required unless the user is ite
 ## Overview
 Turn source material into an **audience-facing board** for creator talking-head videos. Screen recording is out of scope; this skill covers **distilling talking points** and **drawing in Excalidraw**.  
 **Diagram form is not fixed**: choose flowcharts, step lists, relationship maps, light sketches, etc. from content complexity and user intent; follow explicit user instructions when they conflict.  
-Rendering is **only** through Excalidraw MCP. Delivery details and preview fallback live in `references/mcp-delivery.md`.
+Rendering is **only** through Excalidraw MCP. Delivery details and preview fallback live in [`references/mcp-delivery.md`](references/mcp-delivery.md).
 
 ## Reference documents (load on demand)
 
@@ -30,14 +30,14 @@ Open these only when planning layout, choosing diagram type, or reviewing qualit
 
 | File | Use when |
 |------|----------|
-| `references/diagram-modes.md` | Mapping content shape to flowchart / list / sketch / timeline, etc. |
-| `references/layout-and-iteration.md` | Portrait, PiP-safe defaults and iteration order. |
-| `references/mcp-delivery.md` | Checking MCP availability, rendering, and browser-link fallback. |
-| `references/pitfalls.md` | Anti-patterns and delivery failures to avoid. |
+| [`references/diagram-modes.md`](references/diagram-modes.md) | Mapping content shape to flowchart / list / sketch / timeline, etc. |
+| [`references/layout-and-iteration.md`](references/layout-and-iteration.md) | Portrait, PiP-safe defaults and iteration order. |
+| [`references/mcp-delivery.md`](references/mcp-delivery.md) | Checking MCP availability, rendering, and browser-link fallback. |
+| [`references/pitfalls.md`](references/pitfalls.md) | Anti-patterns and delivery failures to avoid. |
 
 ## Maintenance
 
-When revising this skill, validate against `evals/README.md`.
+When revising this skill, validate against [`evals/README.md`](evals/README.md).
 
 ## Prerequisites
 - Host supports MCP. The **configured server name** for Excalidraw MCP varies by client.
@@ -60,14 +60,14 @@ When revising this skill, validate against `evals/README.md`.
 
 ## On failure
 
-- **MCP tools unavailable or preview missing**: Follow `references/mcp-delivery.md`; do not fake a board with non-MCP drawing tools or stop with invisible output.
+- **MCP tools unavailable or preview missing**: Follow [`references/mcp-delivery.md`](references/mcp-delivery.md); do not fake a board with non-MCP drawing tools or stop with invisible output.
 - **URL fetch fails or page is unreadable**: Say so; ask for pasted text, another URL, or a PDF/export; do not invent page content.
 - **User requests facts not in the source**: Refuse or label as inference minimally; prefer asking for more source text.
 
 ## Required Rules (non-negotiables; everything else is flexible)
 
 - **Tooling**
-  - Use Excalidraw MCP only. For required tools, install guidance, and browser-link fallback, follow `references/mcp-delivery.md`.
+  - Use Excalidraw MCP only. For required tools, install guidance, and browser-link fallback, follow [`references/mcp-delivery.md`](references/mcp-delivery.md).
 
 - **Input Contract**
   - At least one of: full article, core paragraph, reachable URL.
@@ -90,15 +90,15 @@ When revising this skill, validate against `evals/README.md`.
   - Only what the audience should see. **No** “say this next,” “recording tip,” or other **backstage** cues.
 
 - **Layout & iteration**
-  - **In short:** for vertical talking-head, prefer portrait (~3:4) and a bottom-right PiP-safe band unless the user or topic needs otherwise. Full defaults and iteration order: `references/layout-and-iteration.md`.
+  - **In short:** for vertical talking-head, prefer portrait (~3:4) and a bottom-right PiP-safe band unless the user or topic needs otherwise. Full defaults and iteration order: [`references/layout-and-iteration.md`](references/layout-and-iteration.md).
 
 ## Execution Steps
 
-1. **Check MCP** — Confirm the required Excalidraw MCP path in `references/mcp-delivery.md`. If missing, guide install and restart per **Tooling**.
+1. **Check MCP** — Confirm the required Excalidraw MCP path in [`references/mcp-delivery.md`](references/mcp-delivery.md). If missing, guide install and restart per **Tooling**.
 
 2. **Read Input** — Ingest material; if only a URL, fetch body first.
 
-3. **Choose mode & plan** — Pick diagram type using `references/diagram-modes.md` when needed; set title and layout; apply layout defaults from `references/layout-and-iteration.md` when vertical talking-head applies.
+3. **Choose mode & plan** — Pick diagram type using [`references/diagram-modes.md`](references/diagram-modes.md) when needed; set title and layout; apply layout defaults from [`references/layout-and-iteration.md`](references/layout-and-iteration.md) when vertical talking-head applies.
 
 4. **Brief User** — Send visible briefing (including theme/title line), then draw.
 
@@ -106,7 +106,7 @@ When revising this skill, validate against `evals/README.md`.
 
 6. **Render** — Render the board via Excalidraw MCP.
 
-7. **Browser fallback** — If the board is **not visible** in chat or the user wants the site, follow `references/mcp-delivery.md` and share the browser link.
+7. **Browser fallback** — If the board is **not visible** in chat or the user wants the site, follow [`references/mcp-delivery.md`](references/mcp-delivery.md) and share the browser link.
 
 8. **Polish** — Iterate; re-export with `export_to_excalidraw` when a share link is needed.
 
@@ -117,4 +117,4 @@ When revising this skill, validate against `evals/README.md`.
 - [ ] User received briefing; canvas has a **title/label** (any style)
 - [ ] No script or recording-only text on the audience board
 - [ ] For vertical talking-head, PiP margin considered when using portrait layout
-- [ ] Anti-patterns reviewed if output quality is off (`references/pitfalls.md`)
+- [ ] Anti-patterns reviewed if output quality is off ([`references/pitfalls.md`](references/pitfalls.md))
